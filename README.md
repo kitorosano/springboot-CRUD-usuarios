@@ -55,6 +55,12 @@ La API REST de la aplicacion se explica a continuacion
         {"id":1,"name":"Foo","email":"foo@gmail.com","prioridad": 3},
     ]
 
+`GET /usuario/query?email=foo@gmail.com`
+
+    [
+        {"id":1,"name":"Foo","email":"foo@gmail.com","prioridad": 3},
+    ]
+
 ## Eliminar un usuario
 
 `DELETE /usuario/id`

@@ -30,7 +30,9 @@ public class UsuarioService {
         return usuarioRepository.findByNombre(nombre);
     }
 
-    // TODO: 16/2/2022 obtenerPorEmail
+    public ArrayList<UsuarioModel> obtenerPorEmail(String email) {
+        return usuarioRepository.findByEmail(email);
+    }
 
     public ArrayList<UsuarioModel> obtenerPorPrioridad(int prioridad){
         return usuarioRepository.findByPrioridad(prioridad);

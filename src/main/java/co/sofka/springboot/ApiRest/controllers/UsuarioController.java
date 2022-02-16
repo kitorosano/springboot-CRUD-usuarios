@@ -5,6 +5,7 @@ import co.sofka.springboot.ApiRest.services.UsuarioService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -64,8 +65,10 @@ public class UsuarioController {
         return this.usuarioService.obtenerPorPrioridad(prioridad);
     }
 
-
-    // TODO: 16/2/2022 obtenerUsuarioPorEmail
+    @GetMapping(value = "/query", params = "email")
+    public ArrayList<UsuarioModel> obtenerUsuarioPorEmail(@RequestParam("email") String email){
+        return this.usuarioService.obtenerPorEmail(email);
+    }
 
     /**
      * Metodo para eliminar un usuario mediante id de la tabla Usuarios

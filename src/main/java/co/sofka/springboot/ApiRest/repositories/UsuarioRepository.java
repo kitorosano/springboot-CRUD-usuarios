@@ -4,6 +4,7 @@ import co.sofka.springboot.ApiRest.models.UsuarioModel;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,6 +14,5 @@ public interface UsuarioRepository extends CrudRepository<UsuarioModel, Long> {
 
     public abstract ArrayList<UsuarioModel> findByNombre(String nombre);
 
-//    find by email
-    // TODO: 16/2/2022 findByEmail
+    public abstract ArrayList<UsuarioModel> findByEmail(String email);
 }
