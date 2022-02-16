@@ -65,6 +65,11 @@ public class UsuarioController {
         return this.usuarioService.obtenerPorPrioridad(prioridad);
     }
 
+    /**
+     * Metodo para obtener un usuario buscando por su email en la base de datos
+     * @param email
+     * @return Toda la informacion del primer usuario encontrado cuyo email coincida
+     */
     @GetMapping(value = "/query", params = "email")
     public ArrayList<UsuarioModel> obtenerUsuarioPorEmail(@RequestParam("email") String email){
         return this.usuarioService.obtenerPorEmail(email);
