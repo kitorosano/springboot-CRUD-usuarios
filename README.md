@@ -1,8 +1,8 @@
 # springboot-CRUD-usuarios
 
-Esto es una aplicacion de ejemplo que provee una API REST de usuarios
+Esto es una aplicación de ejemplo que provee una API REST de usuarios
 
-La aplicacion es un proyecto creado en Java utilizando Springboot como framework
+La API es un proyecto creado en Java utilizando Springboot como framework
 
 ## Ejecutar la app
 
@@ -10,7 +10,7 @@ La aplicacion es un proyecto creado en Java utilizando Springboot como framework
 
 # API REST
 
-La API REST de la aplicacion se explica a continuacion
+La API REST de la aplicación se explica a continuación
 
 ## Obtener listado de usuarios
 

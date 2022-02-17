@@ -4,9 +4,7 @@ import co.sofka.springboot.ApiRest.models.UsuarioModel;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.List;
 
 @Repository
 public interface UsuarioRepository extends CrudRepository<UsuarioModel, Long> {

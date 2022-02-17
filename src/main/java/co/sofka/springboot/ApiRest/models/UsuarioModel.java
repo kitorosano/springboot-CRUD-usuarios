@@ -10,8 +10,13 @@ public class UsuarioModel {
     @Column(unique = true, nullable = false)
     private long id;
 
+    @Column(length = 30, nullable = false)
     private String nombre;
+
+    @Column(length = 30, nullable = false)
     private String email;
+
+    @Column(nullable = false)
     private int prioridad;
 
     public long getId() {
@@ -46,4 +51,5 @@ public class UsuarioModel {
         this.prioridad = prioridad;
     }
 
+    
 }
